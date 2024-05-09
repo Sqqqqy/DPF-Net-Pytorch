@@ -1,0 +1,4 @@
+python /code/torch_base/train.py --epochs 1001 --batch_size 128 --log_freq 10 --warmup_epochs 10 --base_lr 1e-4 --save_prefix test --loss mse --disable_val --momentum 0.5 --checkpoint_freq 50 --model_type bae_k_deform_k_bae_homeo5 --dump_path /output --use_apex --shapenet_fps_path /data/Sqqqqy/BSP-Dataset/shapenet_fps.npy #--load_model_path /code/ckpt/ckp-1000_homeo.pth --load_not_strict --stage2
+
+
+# python /code/torch_base/train.py --epochs 2000 --batch_size 32 --log_freq 10 --warmup_epochs 10 --base_lr 1e-4 --save_prefix test --loss mse --disable_val --momentum 0.5 --checkpoint_freq 10 --model_type bae_k_deform_k_bae --dump_path /output  --load_model_path /code/ckpt/pretrained.pth --load_not_strict --use_apex --shapenet_fps_path /data/Sqqqqy/BSP-Dataset/shapenet_fps.npy
